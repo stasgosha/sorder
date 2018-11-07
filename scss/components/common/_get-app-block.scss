@@ -1,0 +1,50 @@
+.get-app-block{
+	display: flex;
+	align-items: center;
+
+	> .item{
+		margin-right: 30px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		a{
+			display: block;
+
+			&:hover{
+				opacity: .8;
+			}
+		}
+
+		img{
+			display: block;
+		}
+	}
+
+	@media screen and (max-width: 360px){
+		> .item{
+			margin-right: 10px;
+		}
+	}
+}
+
+.rtl{
+	.get-app-block{
+		> .item{
+			margin-right: 0;
+			margin-left: 30px;
+
+			&:last-child{
+				margin-left: 0;
+			}
+		}
+
+		@media screen and (max-width: 360px){
+			> .item{
+				margin-right: 0;
+				margin-left: 10px;
+			}
+		}
+	}
+}

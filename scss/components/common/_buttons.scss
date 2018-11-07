@@ -1,0 +1,67 @@
+.btn{
+	display: inline-flex;
+	border: none;
+	transition: all $t;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	align-items: center;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+	color: #fff;
+	background: $primary;
+	justify-content: center;
+	align-items: center;
+	padding: 4px 34px;
+	border-radius: 18px;
+	border: 2px solid $primary;
+	text-transform: uppercase;
+	font-family: $main-font;
+
+	@media screen and (min-width: 992px){
+		font-size: 24px;
+		line-height: 36px;
+		padding: 7px 48px;
+		border-radius: 27px;
+	}
+
+	&.btn-big{
+		font-size: 24px;
+		line-height: 36px;
+		padding: 7px 48px;
+		border-radius: 27px;
+	}
+
+	&:not(.disabled):hover{
+		background: #fff;
+		color: $primary;
+		text-decoration: none;
+	}
+
+	.icon{
+		&:first-child{
+			margin-right: 13px;
+		}
+
+		&:last-child{
+			margin-left: 13px;
+		}
+	}
+
+	&.fullwidth{
+		width: 100%;
+	}
+
+	@media screen and (max-width: 575px){
+		&.xs-fullwidth{
+			width: 100%;
+		}
+	}
+
+	&.small-radius{
+		border-radius: $r;
+	}
+}

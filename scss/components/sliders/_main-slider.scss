@@ -1,0 +1,137 @@
+.main-slider{
+	&.slick-dotted{
+		margin-bottom: 0;
+	}
+
+	.slide{
+		background-size: cover;
+		background-position: center center;
+		padding: 38px 0;
+		display: flex;
+		align-items: center;
+		min-height: 327px;
+
+		.container{
+			padding-bottom: 42px;
+		}
+	}
+
+	.slick-dots{
+		justify-content: flex-start;
+		bottom: 43px;
+		padding: 0 15px;
+		width: auto;
+	}
+
+	@media screen and (min-width: 576px){
+		.slick-dots{
+			left: calc(50% - 540px / 2);
+		}
+	}
+
+	@media screen and (min-width: 768px){
+		.slick-dots{
+			left: calc(50% - 720px / 2);
+		}
+	}
+
+	@media screen and (min-width: 992px){
+		.slide{
+			height: calc(100vh - 120px);
+			min-height: 500px;
+			max-height: 700px;
+
+			p{
+				margin-bottom: 40px;
+			}
+		}
+
+		.slick-dots{
+			left: calc(50% - 960px / 2 + 15px);
+			bottom: 70px;
+		}
+	}
+
+	@media screen and (min-width: 1199px){
+		.slick-dots{
+			left: calc(50% - 1110px / 2 + 15px);
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		.slick-arrow{
+			z-index: 20;
+
+			&:before{
+				color: $primary;
+			}
+
+			&.slick-prev{
+				left: 8px;
+			}
+
+			&.slick-next{
+				right: 8px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 575px){
+		.slide{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+}
+
+.rtl{
+	.main-slider{
+		@media screen and (min-width: 576px){
+			.slick-dots{
+				left: auto;
+				right: calc(50% - 540px / 2);
+			}
+		}
+
+		@media screen and (min-width: 768px){
+			.slick-dots{
+				left: auto;
+				right: calc(50% - 720px / 2);
+			}
+		}
+
+		@media screen and (min-width: 992px){
+			.slick-dots{
+				left: auto;
+				right: calc(50% - 960px / 2 + 15px);
+			}
+		}
+
+		@media screen and (min-width: 1199px){
+			.slick-dots{
+				left: auto;
+				right: calc(50% - 1110px / 2 + 15px);
+			}
+		}
+
+		@media screen and (max-width: 991px){
+			.slick-arrow{
+				z-index: 20;
+
+				&:before{
+					color: $primary;
+				}
+
+				&.slick-prev{
+					right: 8px;
+					left: auto;
+				}
+
+				&.slick-next{
+					left: 8px;
+					right: auto;
+				}
+			}
+		}
+	}
+}

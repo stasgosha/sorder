@@ -1,0 +1,15 @@
+.logo-block{
+	display: block;
+	height: 30px;
+	cursor: pointer;
+
+	img{
+		width: auto;
+		height: 100%;
+		display: block;
+	}
+
+	@media screen and (min-width: 1199px){
+		height: 40px;
+	}
+}

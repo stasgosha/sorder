@@ -1,0 +1,31 @@
+.advantages-slider{
+	@media screen and (max-width: 575px){
+		.slick-arrow{
+			&.slick-prev{
+				left: -4px;
+			}
+
+			&.slick-next{
+				right: -4px;
+			}
+		}
+	}
+}
+
+.rtl{
+	.advantages-slider{
+		@media screen and (max-width: 575px){
+			.slick-arrow{
+				&.slick-prev{
+					left: auto;
+					right: -4px;
+				}
+
+				&.slick-next{
+					right: auto;
+					left: -4px;
+				}
+			}
+		}
+	}
+}

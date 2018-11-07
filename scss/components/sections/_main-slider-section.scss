@@ -1,0 +1,25 @@
+.main-slider-section{
+	position: relative;
+
+	.mouse-scroll{
+		position: absolute;
+		left: 50%;
+		bottom: 30px;
+		transform: translateX(-50%);
+		color: $text-light;
+		display: block;
+		transition: all $t;
+
+		i{
+			font-size: 40px;
+			display: block;
+			transition: all $t;
+		}
+
+		&:hover{
+			i{
+				transform: scale(1.1);
+			}
+		}
+	}
+}

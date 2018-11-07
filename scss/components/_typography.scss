@@ -1,0 +1,181 @@
+// .sor- - prefix for typography
+
+.sor-body-1,
+.sor-typography p{
+	font-size: 14px;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	font-weight: 400;
+	color: $text-light;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: 992px){
+		font-size: 16px;
+	}
+}
+
+.sor-body-2{
+	font-size: 18px;
+	line-height: 1.5em;
+	margin: 0 0 1.5em;
+	font-weight: 400;
+	color: $text-color;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.sor-note{
+	// font-size: 13px;
+	// line-height: 18px;
+	// font-style: italic;
+	// font-family: $second-font;
+}
+
+.sor-h1,
+.sor-typography h1{
+	font-size: 40px;
+	line-height: 1.1em;
+	font-weight: bold;
+	margin: 0 0 15px;
+	color: $text-dark;
+
+	@media screen and (min-width: 992px){
+		font-size: 54px;
+		margin: 0 0 35px;
+	}
+}
+
+.sor-h2,
+.sor-typography h2{
+	font-size: 18px;
+	line-height: 1.23em;
+	margin: 0 0 20px;
+	text-align: center;
+	font-weight: 400;
+	color: $text-dark;
+
+	@media screen and (min-width: 768px){
+		font-size: 36px;
+	}
+
+	@media screen and (min-width: 992px){
+		font-size: 48px;
+	}
+}
+
+.sor-h3,
+.sor-typography h3{
+	color: $text-dark;
+	font-size: 24px;
+	line-height: 1.23em;
+	margin: 0 0 16px;
+
+	@media screen and (min-width: 768px){
+		font-size: 36px;
+		margin-bottom: 30px;
+	}
+}
+
+.sor-h4,
+.sor-typography h4{
+	color: $text-dark;
+	font-size: 18px;
+	line-height: 1.23em;
+	margin: 0 0 16px;
+	font-weight: bold;
+
+	@media screen and (min-width: 768px){
+		font-size: 20px;
+	}
+
+	@media screen and (min-width: 992px){
+		font-size: 24px;
+	}
+}
+
+.section-caption{
+	margin-bottom: 30px;
+
+	&:last-child{
+		margin-bottom: 0;
+	}
+
+	.caption{
+		margin-bottom: 22px;
+		padding-bottom: 20px;
+		position: relative;
+
+		&:last-child{
+			margin-bottom: 0 !important;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			width: 80px;
+			height: 2px;
+			background: $primary;
+			border-radius: 2px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -1px;
+		}
+
+		&.big{
+			font-size: 36px;
+			line-height: 1.2em;
+		}
+	}
+
+	.subcaption{
+		text-align: center;
+	}
+
+	&.no-dash{
+		.caption{
+			padding-bottom: 0;
+
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	&.small-margin{
+		margin-bottom: 30px;
+	}
+
+	@media screen and (min-width: 767px){
+		margin-bottom: 60px;
+
+		.caption{
+			margin-bottom: 24px;
+			padding-bottom: 20px;
+
+			&:after{
+				width: 120px;
+				height: 4px;
+				bottom: -2px;
+			}
+		}
+
+		.subcaption{
+			max-width: 66.6666%;
+			margin: 0 auto;
+		}
+	}
+
+	@media screen and (min-width: 767px){
+		.caption{
+			&.big{
+				font-size: 48px;
+			}
+		}
+	}
+}

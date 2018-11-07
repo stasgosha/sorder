@@ -1,0 +1,24 @@
+.advantages-list{
+	@media screen and (min-width: 576px){
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		justify-content: center;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-bottom: -50px;
+
+		> .item{
+			width: 50%;
+			padding: 0 15px;
+			margin-bottom: 50px;
+		}
+	}
+
+	@media screen and (min-width: 992px){
+		> .item{
+			width: 33.3333%;
+		}
+	}
+}

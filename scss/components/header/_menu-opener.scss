@@ -1,0 +1,47 @@
+.menu-opener{
+	.opener{
+		flex-direction: column;
+		align-items: stretch;
+		width: 32px;
+		cursor: pointer;
+		transition: all .3s;
+		cursor: pointer;
+
+		.bar{
+			height: 3px;
+			width: 100%;
+			background: $primary;
+			margin-bottom: 7px;
+			transition: all .3s;
+			border-radius: 2px;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&.active{
+		.opener{
+			width: 23px;
+
+			.bar{
+				width: 28px;
+
+				&:nth-child(1){
+					transform-origin: 0 2px;
+					transform: rotate(45deg);
+				}
+
+				&:nth-child(2){
+					width: 0;
+				}
+
+				&:nth-child(3){
+					transform-origin: 0 1px;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}

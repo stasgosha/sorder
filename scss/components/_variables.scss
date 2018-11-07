@@ -1,0 +1,24 @@
+// Fonts
+$main-font: 'Calibri', Arial, sans-serif;
+
+// Colors
+$green: #4caf50;
+$lightgreen: #75ee79;
+$red: #eb5757;
+
+$gray-bg: #e6e7e9;
+
+$gray: #4f4f4f;
+$lightgray: #828282;
+
+$text-dark: #000;
+$text-color: $gray;
+$text-light: $lightgray;
+
+$primary: $green;
+
+$gradient: linear-gradient(to bottom, $primary 0%, $primary 23%, $lightgreen 100%);
+
+// Params
+$t: .3s; // animation duration
+$r: 5px; // default border radius

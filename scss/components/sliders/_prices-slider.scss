@@ -1,0 +1,21 @@
+.prices-slider{
+	.slick-dots{
+		bottom: -126px;
+	}
+
+	@media screen and (max-width: 575px){
+		.slide{
+			padding: 0 15px;
+		}
+
+		.slick-arrow{
+			&.slick-prev{
+				left: -6px;
+			}
+
+			&.slick-next{
+				right: -6px;
+			}
+		}
+	}
+}

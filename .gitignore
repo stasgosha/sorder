@@ -1,2 +1,4 @@
 .sass-cache/
 *.css.map
+bootstrap-4-dev/*
+data/*

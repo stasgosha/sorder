@@ -1,0 +1,81 @@
+.prices-card{
+	border: 1px solid $gray-bg;
+	border-radius: 12px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	cursor: pointer;
+
+	.card-header{
+		flex: none;
+		background: #fff;
+		transition: all $t;
+		color: $text-dark;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 30px;
+		min-height: 170px;
+	}
+
+	.card-caption{
+		font-size: 24px;
+		line-height: 1em;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 25px;
+
+		&:after{
+			content: '';
+			display: block;
+			height: 2px;
+			width: 60px;
+			border-radius: 2px;
+			background: $primary;
+			position: absolute;
+			bottom: -14px;
+			left: calc(50% - 30px);
+			transition: all $t;
+		}
+	}
+
+	.card-price{
+		font-size: 36px;
+		line-height: 1em;
+	}
+
+	.properties-list{
+		width: 100%;
+		list-style: none;
+
+		li{
+			min-height: 60px;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: center;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&:nth-child(odd){
+				background: $gray-bg;
+			}
+		}
+	}
+
+	&:hover,
+	&.selected{
+		.card-header{
+			background: $primary;
+			color: #fff;
+		}
+
+		.card-caption:after{
+			background: #fff;
+		}
+	}
+}

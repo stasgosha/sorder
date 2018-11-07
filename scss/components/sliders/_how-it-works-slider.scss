@@ -1,0 +1,136 @@
+.how-it-works-slider{
+	margin: 0 auto;
+	position: relative;
+	width: 654px;
+	left: 50%;
+	margin-left: -325px;
+
+	&:before{
+		content: '';
+		display: block;
+		width: 260px;
+		height: 457px;
+		position: absolute;
+		left: calc(50% - 130px);
+		top: 0;
+		z-index: 2;
+		background: url(../img/iphone-mockup.png) no-repeat center center;
+		background-size: cover;
+		transition: all $t;
+	}
+
+	.slide{
+		opacity: 0;
+		transition: all $t;
+		transform: scale(0.91);
+		filter: blur(4px);
+		width: 181px;
+
+		&.slick-active{
+			opacity: 1;
+		}
+
+		&.slick-cloned{
+			opacity: 0;
+		}
+
+		.slide-image{
+			position: relative;
+			padding-top: 20px;
+			width: 181px;
+			height: 420px;
+			margin: auto;
+
+			img{
+				display: block;
+				max-width: 100%;
+				height: auto;
+				margin: 0 auto;
+			}
+		}
+
+		&.slick-center{
+			filter: blur(0);
+			transform: scale(1);
+		}
+	}
+
+	@media screen and (min-width: 992px){
+		max-width: 880px;
+		width: 100%;
+		left: auto;
+		transform: translateX(0);
+		margin: 0 auto;
+
+		&:before{
+			width: 315px;
+			height: 567px;
+			left: calc(50% - 157px);
+		}
+
+		.slide{
+			padding: 0 13px;
+
+			.slide-image{
+				width: 220px;
+				height: 510px;
+				padding-top: 30px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		.slick-arrow{
+			z-index: 20;
+
+			&.slick-prev{
+				left: calc(50% - 50vw + 20px);
+			}
+
+			&.slick-next{
+				right: calc(50% - 50vw + 20px);
+			}
+		}
+	}
+}
+
+.rtl{
+	.how-it-works-slider{
+		right: 50%;
+		margin-right: -325px;
+		left: auto;
+		margin-left: 0px;
+
+		@media screen and (min-width: 992px){
+			right: auto;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: 767px){
+			.slick-arrow{
+				z-index: 20;
+
+				&.slick-prev{
+					left: auto;
+					right: calc(50% - 50vw + 20px);
+				}
+
+				&.slick-next{
+					right: auto;
+					left: calc(50% - 50vw + 20px);
+				}
+			}
+		}
+	}
+}
+
+.how-it-works-descriptions-slider{
+	text-align: center;
+	max-width: 580px;
+	margin: 60px auto 0;
+
+	@media screen and (min-width: 992px){
+		max-width: 740px;
+		margin-top: 90px;
+	}
+}

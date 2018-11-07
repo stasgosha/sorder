@@ -1,0 +1,46 @@
+@import "components/fonts";
+@import "components/variables";
+@import "components/layout";
+@import "components/icons";
+@import "components/typography";
+@import "components/assist";
+
+// Header
+@import "components/header/header";
+@import "components/header/menu-opener";
+@import "components/header/logo-block";
+@import "components/header/top-nav";
+@import "components/header/language-select";
+
+// Common
+@import "components/common/buttons";
+@import "components/common/forms";
+@import "components/common/socials-list";
+@import "components/common/panel";
+@import "components/common/accordion";
+@import "components/common/get-app-block";
+
+// Sections
+@import "components/sections/main-slider-section";
+@import "components/sections/pre-footer-section";
+
+// Sliders
+@import "components/sliders/slick-slider";
+@import "components/sliders/main-slider";
+@import "components/sliders/advantages-slider";
+@import "components/sliders/how-it-works-slider";
+@import "components/sliders/restaurants-slider";
+@import "components/sliders/prices-slider";
+
+// Advantages
+@import "components/advantages/advantages-card";
+@import "components/advantages/advantages-list";
+
+// Prices Page
+@import "components/prices/prices-list";
+@import "components/prices/prices-card";
+@import "components/prices/prices-form";
+
+// Footer
+@import "components/footer/footer";
+@import "components/footer/footer-nav";
